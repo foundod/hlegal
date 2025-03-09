@@ -1,0 +1,42 @@
+.company-screen {
+
+    margin-bottom: 60px;
+
+    &__tittle {
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 12px;
+        overflow: hidden;
+
+        li {
+            width: calc(100%/4);
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        padding: 13px 20px;
+    }
+
+    &__image {
+        height: 100%;
+
+    }
+}

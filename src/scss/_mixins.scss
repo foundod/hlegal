@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin text-grad {
+  color: transparent;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+}
