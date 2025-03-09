@@ -12,14 +12,46 @@
 <body>
   <div class="wrapper">
     <div class="main-wrapper">
-      <div class="container">
-        <div class="main-screen">
+      <div class="main-screen">
+        <div class="container">
           <header class="header">
+            <div class="header__contacts d-none d-md-block">
+              <ul class="header__lang">
+                <li>
+                  <a href="#">
+                    УК
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    РУ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="header__lang--active">
+                    EN
+                  </a>
+                </li>
+              </ul>
+              <ul class="header__social">
+                <li>
+                  Kyiv, Mechnikova str, 14/1
+                </li>
+                <li>
+                  <a href="tel:0800211927">
+                    0800 211 927
+                  </a>
+                </li>
+                <li>
+                  <img src="/img/Facebook.svg" alt="">
+                </li>
+              </ul>
+            </div>
             <a href="#" class="header__logo">
               <img src="/img/Logo.svg" alt="">
             </a>
             <div>
-              <div class="header__contacts">
+              <div class="header__contacts d-md-none">
                 <ul class="header__lang">
                   <li>
                     <a href="#">
@@ -85,52 +117,54 @@
           </h1>
           <img src="/img/Scroll.svg" alt="" class="main-screen__scroll">
         </div>
- <div class="tabs" id="tabs">
-            <ul class="tabs__list">
-              <li class="tabs__link active">Consistent</li>
-              <li class="tabs__link">Customer oriented</li>
-              <li class="tabs__link">Innovative</li>
-              <li class="tabs__link">Business oriented</li>
-            </ul>
-            <div class="tabs__content">
-              <div class="tabs__content-text active">
-                <h2>1-We turn the idea of legal services</h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2>2-We turn the idea of legal services</h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2>3-We turn the idea of legal services</h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
-              <div class="tabs__content-text">
-                <h2>4-We turn the idea of legal services</h2>
-                <p>
-                  Consolidating many years of experience and practice, the
-                  company's lawyers accompany complex projects and achieve a
-                  number of important decisions for the industry. Many of them
-                  form the practice of applying the law of the sea in Ukraine.
-                </p>
-              </div>
+      </div>
+      <div class="container">
+        <div class="tabs" id="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__link active">Consistent</li>
+            <li class="tabs__link">Customer oriented</li>
+            <li class="tabs__link">Innovative</li>
+            <li class="tabs__link">Business oriented</li>
+          </ul>
+          <div class="tabs__content">
+            <div class="tabs__content-text active">
+              <h2>1-We turn the idea of legal services</h2>
+              <p>
+                Consolidating many years of experience and practice, the
+                company's lawyers accompany complex projects and achieve a
+                number of important decisions for the industry. Many of them
+                form the practice of applying the law of the sea in Ukraine.
+              </p>
+            </div>
+            <div class="tabs__content-text">
+              <h2>2-We turn the idea of legal services</h2>
+              <p>
+                Consolidating many years of experience and practice, the
+                company's lawyers accompany complex projects and achieve a
+                number of important decisions for the industry. Many of them
+                form the practice of applying the law of the sea in Ukraine.
+              </p>
+            </div>
+            <div class="tabs__content-text">
+              <h2>3-We turn the idea of legal services</h2>
+              <p>
+                Consolidating many years of experience and practice, the
+                company's lawyers accompany complex projects and achieve a
+                number of important decisions for the industry. Many of them
+                form the practice of applying the law of the sea in Ukraine.
+              </p>
+            </div>
+            <div class="tabs__content-text">
+              <h2>4-We turn the idea of legal services</h2>
+              <p>
+                Consolidating many years of experience and practice, the
+                company's lawyers accompany complex projects and achieve a
+                number of important decisions for the industry. Many of them
+                form the practice of applying the law of the sea in Ukraine.
+              </p>
             </div>
           </div>
+        </div>
         <!-- <div class="information-screen">
           <ul class="information-screen__list">
             <li class="active">
@@ -160,10 +194,10 @@
           </div>
         </div> -->
         <div class="benifits-screen">
-          <div class="sub-tittle">
+          <a href="#" class="sub-tittle">
             Services
             <img src="/img/arrow-right.svg" alt="">
-          </div>
+          </a>
           <div class="tittle">
             What can we do better than others?
           </div>
@@ -257,10 +291,13 @@
         <div class="review-screen__slide">
           <img src="/img/photo_1.jpg" alt="" class="review-screen__image">
           <div class="review-screen__text">
-            <div class="sub-tittle">
+            <a href="#" class="sub-tittle">
               команда
               <img src="/img/arrow-right.svg" alt="">
-            </div>
+              <!-- <svg viewBox="0 0 12 12" width="12" height="12">
+                <use href="/img/sprite.svg#arrow" x="0" y="0"></use>
+              </svg> -->
+            </a>
             <div class="tittle">
               Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
               коли

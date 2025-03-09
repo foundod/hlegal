@@ -26,6 +26,13 @@
 
     &__scroll {
         width: 42px;
+        margin: auto auto 0;
+    }
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
 
     }
 }

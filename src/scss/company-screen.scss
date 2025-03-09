@@ -39,4 +39,30 @@
         height: 100%;
 
     }
+
+    
+
+    @media screen and (max-width: $breakpoint-md) {
+        & .container {
+            max-width: none;
+            padding: 0%;
+        }
+
+        &__items {
+            border-radius: 0%;
+
+            li {
+                width: calc(100%/3);
+            }
+        }
+
+        &__image {
+            height: auto;
+            width: 110%;
+        }
+
+        &__item {
+            padding: 20px;
+        }
+    }
 }

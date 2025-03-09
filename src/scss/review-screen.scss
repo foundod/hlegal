@@ -35,4 +35,24 @@
         font-size: 14px;
         line-height: 22px;
     }
+
+
+    @media screen and (max-width: $breakpoint-md) {
+        &__slide {
+            flex-direction: column;
+        }
+
+        &__image {
+            width: 100%;
+            // border-radius: 0%;
+        }
+
+        & .tittle {
+            margin-bottom: 30px;
+        }
+
+        &__name {
+            margin-bottom: 6px;
+        }
+    }
 }

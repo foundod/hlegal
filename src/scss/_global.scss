@@ -15,9 +15,14 @@ body {
 }
 
 .container {
+	width: 100%;
 	max-width: 1720px;
 	margin: 0 auto;
 	padding: 0 60px;
+
+	@media screen and (max-width: $breakpoint-lg) {
+		max-width: 100%;
+	}
 }
 
 .title {
@@ -30,99 +35,6 @@ body {
 
 }
 
-.header {
-	padding: 50px 0px;
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-
-	&__logo {
-		width: 130px;
-	}
-
-	&__contacts {
-		display: flex;
-		align-items: center;
-	}
-
-	&__lang {
-		display: flex;
-
-		& li {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		& a {
-			color: white;
-			text-decoration: none;
-			border-radius: 8px;
-			padding: 5px 7px;
-			font-weight: 700;
-			font-size: 12px;
-			line-height: 14px;
-			letter-spacing: 1px;
-		}
-
-		&--active {
-			background-color: #F0145A;
-		}
-	}
-
-	&__social {
-		display: flex;
-		align-items: center;
-
-		& li {
-			margin-left: 6px;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 19px;
-			vertical-align: middle;
-			align-items: center;
-			display: flex;
-
-			&::before {
-				content: "";
-				width: 6px;
-				height: 6px;
-				border-radius: 100%;
-				background-color: #E6E6F0;
-				display: inline-block;
-				margin-right: 6px;
-			}
-
-			& a {
-				color: white;
-				text-decoration: none;
-				font-weight: 700;
-			}
-		}
-	}
-
-	&__navigation {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		margin-top: 12px;
-
-		& li {
-			margin-left: 18px;
-			font-weight: 400;
-			font-size: 16px;
-			line-height: 19px;
-			vertical-align: middle;
-
-			& a {
-				color: white;
-				text-decoration: none;
-				font-weight: 700;
-			}
-		}
-	}
-}
-
 .sub-tittle {
 	color: var(--active-regular-color);
 	font-weight: 700;
@@ -130,6 +42,12 @@ body {
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	transition: color 0.2s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		color: var(--accent-color);
+	}
 
 	img {
 		width: 12px;
@@ -147,119 +65,18 @@ body {
 	letter-spacing: 0%;
 }
 
-.footer {
-	position: relative;
-	background-color: var(--grey-bg-color);
-	padding-bottom: 30px;
-
-	& .container::before {
-		content: "";
-		display: block;
-		background-color: var(--grey-separator-color);
-		height: 2px;
-		width: 100%;
-		margin-bottom: 30px;
+.d-md-none {
+	@media screen and (max-width: $breakpoint-md) {
+		display: none;
 	}
+}
 
-	&__data {
-		color: var(--main-color);
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 100%;
+.d-none {
+	display: none;
+}
+
+.d-md-block {
+	@media screen and (max-width: $breakpoint-md) {
 		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		margin-bottom: 21px;
-
-		ul {
-			display: flex;
-
-			li {
-				display: flex;
-				align-items: center;
-
-				&:first-child::before {
-					content: none;
-				}
-
-				&::before {
-					content: "";
-					background-color: var(--grey-text-color);
-					width: 6px;
-					height: 6px;
-					border-radius: 50px;
-					margin: 0 10px;
-				}
-			}
-		}
-
-		a {
-			color: var(--active-regular-color);
-			font-weight: 700;
-			font-size: 12px;
-			line-height: 100%;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			text-decoration: none;
-		}
-	}
-
-	&__copy {
-		color: var(--grey-text-color);
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 100%;
-		text-align: right;
-	}
-
-	&__social {
-		color: var(--main-color);
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 100%;
-		display: flex;
-		width: 100%;
-		justify-content: space-between;
-		margin-bottom: 21px;
-
-		ul {
-			display: flex;
-
-			li {
-				display: flex;
-				align-items: center;
-
-				&:first-child::before {
-					content: none;
-				}
-
-				&::before {
-					content: "";
-					background-color: var(--grey-text-color);
-					width: 6px;
-					height: 6px;
-					border-radius: 50px;
-					margin: 0 10px;
-				}
-			}
-		}
-	}
-
-	&__email {
-		color: var(--active-regular-color);
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 100%;
-		letter-spacing: 1px;
-		text-decoration: none;
-	}
-
-	&__tel{
-		color: var(--main-alt-color);
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 100%;
-		letter-spacing: 1px;
-		text-decoration: none;
 	}
 }
