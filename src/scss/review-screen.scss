@@ -55,4 +55,13 @@
             margin-bottom: 6px;
         }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        &__image {
+            height: 500px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+    }
 }

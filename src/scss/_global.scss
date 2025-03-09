@@ -9,7 +9,7 @@ body {
 
 .wrapper {
 	min-height: 100vh;
-	min-width: 375px;
+	// min-width: 375px;
 	position: relative;
 	overflow: hidden;
 }
@@ -22,6 +22,10 @@ body {
 
 	@media screen and (max-width: $breakpoint-lg) {
 		max-width: 100%;
+	}
+
+	@media screen and (max-width: $breakpoint-sm) {
+		padding: 0 30px;
 	}
 }
 
@@ -63,6 +67,18 @@ body {
 	font-size: 38px;
 	line-height: 120%;
 	letter-spacing: 0%;
+
+
+	@media screen and (min-width: $breakpoint-sm) {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 100%;
+	}
+
+}
+
+.d-none {
+	display: none;
 }
 
 .d-md-none {
@@ -71,12 +87,20 @@ body {
 	}
 }
 
-.d-none {
-	display: none;
-}
-
 .d-md-block {
 	@media screen and (max-width: $breakpoint-md) {
+		display: flex;
+	}
+}
+
+.d-sm-none {
+	@media screen and (max-width: $breakpoint-sm) {
+		display: none !important;
+	}
+}
+
+.d-sm-block {
+	@media screen and (max-width: $breakpoint-sm) {
 		display: flex;
 	}
 }

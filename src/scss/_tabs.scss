@@ -15,6 +15,10 @@
         margin-right: -30px;
         margin-bottom: 60px;
 
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-bottom: 30px;
+        }
+
         @media screen and (min-width: $breakpoint-md) {
             font-size: 38px;
         }
@@ -55,6 +59,7 @@
             display: flex;
             align-items: center;
         }
+
     }
 
     &__content-text {
@@ -84,6 +89,16 @@
 
         &:not(.active) {
             display: none;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding-top: 30px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 120%;
+            }
         }
     }
 }

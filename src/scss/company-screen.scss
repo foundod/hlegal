@@ -65,4 +65,20 @@
             padding: 20px;
         }
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 0;
+        &__tittle {
+
+        }
+
+        &__items li {
+            width: 100%;
+        }
+
+        &__image {
+            height: 120%;
+            width: auto;
+        }
+    }
 }

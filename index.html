@@ -34,7 +34,7 @@
                 </li>
               </ul>
               <ul class="header__social">
-                <li>
+                <li class="d-sm-none">
                   Kyiv, Mechnikova str, 14/1
                 </li>
                 <li>
@@ -42,14 +42,53 @@
                     0800 211 927
                   </a>
                 </li>
-                <li>
+                <li class="d-sm-none">
                   <img src="/img/Facebook.svg" alt="">
                 </li>
               </ul>
             </div>
-            <a href="#" class="header__logo">
-              <img src="/img/Logo.svg" alt="">
-            </a>
+            <div class="header__bottom">
+              <a href="#" class="header__logo">
+                <img src="/img/Logo.svg" alt="">
+              </a>
+              <div class="menu d-none d-sm-block">
+                <label class="menu__burger" for="checkbox">
+                  <div class="menu__burger-item"> 
+                    <span> </span>
+                    <input type="checkbox" id="checkbox">
+                  </div>
+                </label>
+                <nav class="menu__nav">
+                  <ul>
+                    <li>
+                      <a>
+                        about us
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        послуги
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        команда
+                      </a>
+                    </li>
+                    <li>
+                      <a class="active">
+                        публікації
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        контакти
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
             <div>
               <div class="header__contacts d-md-none">
                 <ul class="header__lang">
@@ -447,7 +486,7 @@
               </a>
             </li>
           </ul>
-          <p class="footer__copy">
+          <p class="footer__copy d-sm-none">
             © 2021 HLEGAL Law company, LLC
           </p>
         </div>
@@ -468,6 +507,9 @@
             </li>
           </ul>
         </div>
+        <p class="footer__copy d-none d-sm-block">
+          © 2021 HLEGAL Law company, LLC
+        </p>
       </div>
     </footer>
   </div>

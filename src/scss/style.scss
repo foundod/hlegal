@@ -2,7 +2,6 @@
 @import 'reset';
 @import 'vars';
 @import 'mixins';
-@import 'global';
 @import 'main';
 @import 'tabs';
 @import 'main-screen';
@@ -10,3 +9,7 @@
 @import 'review-screen';
 @import 'company-screen';
 @import 'posts-screen';
+@import 'header';
+@import 'footer';
+@import 'global';
+@import 'menu';

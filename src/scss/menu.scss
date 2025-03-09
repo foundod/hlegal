@@ -1,0 +1,141 @@
+.menu {
+    padding: 15px;
+    margin-left: auto;
+
+    & a {
+        color: white;
+        font-size: 18px;
+    }
+
+    & ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__burger {
+        width: 32px;
+        height: 32px;
+        transition: background-color 0.3s ease-in;
+        z-index: 2;
+        padding: 10px 7px;
+        display: block;
+
+        &-item {
+            width: 18px;
+            height: 15px;
+            position: relative;
+
+
+
+            &::before {
+                width: 18px;
+                height: 2px;
+                background-color: var(--basic-white-color);
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: "";
+                transition: transform 0.3s ease-in;
+            }
+
+            & span {
+                width: 18px;
+                height: 2px;
+                background-color: var(--basic-white-color);
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: opacity 0.1s ease-in;
+            }
+
+            &::after {
+                width: 18px;
+                height: 2px;
+                background-color: var(--basic-white-color);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                content: "";
+                transition: transform 0.3s ease-in, background-color 0.2s ease-in;
+            }
+        }
+    }
+
+    &__nav {
+        z-index: 1;
+        width: calc(100% - 20px);
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        padding-top: 35px;
+        transform: translateX(-50%) translateY(100%);
+        transition: transform 0.2s linear;
+        background-color: white;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+
+        ul {
+            width: 100%;
+            padding: 0 12px;
+        }
+
+        li {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: var(--active-regular-color);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            background-color: var(--grey-bg-color);
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+            padding: 7px;
+
+            &.active {
+                color: var(--accent-color);
+            }
+
+            &:active {
+                background-color: var(--grey-separator-color);
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+    }
+
+    label:has(input[type="checkbox"]:checked) {
+        background-color: var(--grey-separator-color);
+        border-radius: 8px;
+    }
+
+    label:has(input[type="checkbox"]:checked) .menu__burger-item::before {
+        transform: rotate(40deg) translate(3px, 3px); 
+        background-color: var(--main-color);
+    }
+
+    label:has(input[type="checkbox"]:checked) .menu__burger-item span {
+        opacity: 0;
+    }
+
+    label:has(input[type="checkbox"]:checked) .menu__burger-item::after {
+        transform: rotate(-45deg) translate(7px, -6px);
+        background-color: var(--main-color);
+    }
+
+    label:has(input[type="checkbox"]:checked)+&__nav {
+        transform: translateX(-50%) translateY(0);
+    }
+}

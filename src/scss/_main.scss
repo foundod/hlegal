@@ -32,6 +32,19 @@
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
     }
+
+    
+    @media screen and (max-width: $breakpoint-sm) {
+        margin-bottom: 50px;
+
+        &::after {
+            max-width: 90%;
+        }
+    
+        &::before {
+            max-width: 80%;
+        }
+    }
 }
 
 // .information-screen {
