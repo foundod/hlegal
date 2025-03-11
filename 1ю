@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="team swiper">
+        <section class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="team__image">
+                <img src="/img/photo_1.jpg" alt="Олександр Олександровський">
+            </div>
+            <div class="team__info">
+                <a href="" class="cat-link">команда</a>
+                <h2 class="gradient-text">
+                    Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у
+                    ситуаціях, коли більшість безсилі.
+                </h2>
+                <strong class="team__name">Олександр Олександровський</strong>
+                <span class="team__post">Керуючий партнер</span>
+            </div>
+
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+</div>
