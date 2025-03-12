@@ -69,7 +69,7 @@ body {
 	letter-spacing: 0%;
 
 
-	@media screen and (min-width: $breakpoint-sm) {
+	@media screen and (max-width: $breakpoint-sm) {
 		font-weight: 700;
 		font-size: 30px;
 		line-height: 100%;

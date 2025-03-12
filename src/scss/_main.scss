@@ -33,6 +33,11 @@
         border-bottom-right-radius: 12px;
     }
 
+
+    @media screen and (max-width: $breakpoint-lg) {
+        margin-bottom: 80px;
+    }
+
     
     @media screen and (max-width: $breakpoint-sm) {
         margin-bottom: 50px;

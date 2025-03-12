@@ -57,7 +57,7 @@
         padding-right: 30px;
     }
 
-    @media screen and (max-width: $breakpoint-lg) {
+    @media screen and (max-width: $breakpoint-md) {
         &__items {
             flex-wrap: wrap;
             justify-content: space-between;

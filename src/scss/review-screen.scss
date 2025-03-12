@@ -1,12 +1,6 @@
 .review-screen {
     margin-bottom: 60px;
 
-    &__slide {
-        display: flex;
-        background-color: var(--grey-bg-color);
-        border-radius: 12px;
-    }
-
     &__text {
         padding: 30px;
         display: flex;
@@ -19,49 +13,5 @@
 
     &__image {
         width: 400px;
-    }
-
-    &__name {
-        color: var(--grey-text-color);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 100%;
-        margin-top: auto;
-    }
-
-    &__post {
-        color: var(--grey-text-color);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-
-    @media screen and (max-width: $breakpoint-md) {
-        &__slide {
-            flex-direction: column;
-        }
-
-        &__image {
-            width: 100%;
-            // border-radius: 0%;
-        }
-
-        & .tittle {
-            margin-bottom: 30px;
-        }
-
-        &__name {
-            margin-bottom: 6px;
-        }
-    }
-
-    @media screen and (max-width: $breakpoint-sm) {
-        &__image {
-            height: 500px;
-            object-fit: cover;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
     }
 }

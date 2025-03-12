@@ -1,81 +1,143 @@
-// 768? другой файл 
+// // 768? другой файл 
 
-.cat-link {
-    color: var(--active-regular-color);
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
+// .cat-link {
+//     color: var(--active-regular-color);
+//     font-size: 14px;
+//     text-transform: uppercase;
+//     font-weight: 700;
 
-&:after {
-    content: "";
-    width: 9px;
-    height: 9px;
-    border-color: inherit;
-    border-width: 3px 3px 0 0;
-    border-style: solid;
-    display: inline-block;
-    transform: rotate(45deg);
-    margin-left: 2px;
-}
+//     &:after {
+//         content: "";
+//         width: 9px;
+//         height: 9px;
+//         border-color: inherit;
+//         border-width: 3px 3px 0 0;
+//         border-style: solid;
+//         display: inline-block;
+//         transform: rotate(45deg);
+//         margin-left: 2px;
+//     }
+    
+//     &:hover {
+//         color: var(--accent-color);
+//     }
+// }
 
-&:hover {
-    color: var(--accent-color);
-}
-// другой файл 
+// // другой файл 
 
 .team {
     padding-bottom: 50px;
     margin-bottom: 60px;
-    
+
+    &__container .container{
+        padding: 0 120px;
+    }
+
+    &__slide {
+        display: flex;
+        background-color: var(--grey-bg-color);
+        border-radius: 12px;
+    }
+
     &__image {
         border-radius: 12px 12px 0 0;
         overflow: hidden;
-        height: 500px;
+        height: auto;
+        width: 400px;
+        flex-shrink: 0;
+        border-radius: 12px 0 0 12px;
+        min-height: 298px;
+        // height: 298px;
 
-            @media screen and (min-width: $breakpoint-lg) {
-                height: auto;
-                min-height: 528px;
-                width: 400px;
-                flex-shrink: 0;
-                border-radius: 12px 0 0 12px;
-            }
-
-            @media screen and (min-width: $breakpoint-xl) {
-                min-height: 298px;
-            }
-
-            @media screen and (min-width: $breakpoint-xxl) {
-                min-height: 344x;
-            }
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
-}
 
-&__name {
-    display: block;
-    font-weight: 700;
-    color: var();
-}
+    &__info {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
 
-&__ingo {
-    padding: 30px;
-    background-color: var(--main-text-color);
-}
+    &__name {
+        color: var(--grey-text-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: auto;
+        display: block;
+        padding-top: 30px;
+    }
 
-&__post {
-    font-size: 16px;
-    color: var();
-}
+    &__post {
+        color: var(--grey-text-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        display: block;
+    }
 
-.swiper-pagination .swiper-pagination-bullets {
-    width: 16px;
-    height: 16px;
-    margin: 0 8px;
+    & .swiper-pagination {
+        bottom: -8px;
+    }
+
+    & .swiper-pagination-bullet {
+        background-color: var(--active-regular-color);
+        width: 16px;
+        height: 16px;
+        margin: 0 8px;
+    }
+
+
+    @media screen and (max-width: $breakpoint-xxl) {
+        &__image {
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xl) {
+        &__container .container {
+            padding: 0 60px;
+        }
+
+        &__image {
+            width: 320px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        &__slide {
+            flex-direction: column;
+        }
+
+        &__image {
+            width: 100%;
+            height: 500px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        & .tittle {
+            // margin-bottom: 30px;
+        }
+
+        &__name {
+            margin-bottom: 6px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        
+        &__container .container {
+            padding: 0 30px;
+        }
+        &__image {
+            height: 500px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+    }
 }

@@ -78,6 +78,13 @@
 		}
 	}
 
+	&__menu-close {
+		background-color: transparent;
+		margin-left: auto;
+		margin-right: 12px;
+		margin-bottom: 20px;
+	}
+
 	&__navigation {
 		display: flex;
 		align-items: center;
@@ -114,6 +121,10 @@
 
 		&__logo {
 			margin-bottom: 30px;
+		}
+
+		&__navigation {
+			margin-top: 30px;
 		}
 
 		&__navigation li {
@@ -157,3 +168,4 @@
 		}
 	}
 }
+
