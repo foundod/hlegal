@@ -12,6 +12,10 @@
 		margin-bottom: 30px;
 	}
 
+	&--light .container::before{
+		background-color: transparent;
+	}
+
 	&__data {
 		color: var(--main-color);
 		font-weight: 400;
@@ -119,6 +123,27 @@
 			margin-bottom: 0;
 		}
 	}
+
+	@media screen and (max-width: $breakpoint-md) {
+        justify-content: center;
+		align-items: center;
+
+		&__data {
+			max-width: 430px;
+			width: 100%;
+			margin: auto;
+			margin-bottom: 21px;
+		}
+
+		&__social {
+			justify-content: center;
+		}
+
+		&__copy {
+			justify-content: center;
+			margin-top: 30px;
+		}
+    }
 
 	@media screen and (max-width: $breakpoint-sm) {
 		&__data {

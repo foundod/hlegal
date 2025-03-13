@@ -104,3 +104,9 @@ body {
 		display: flex;
 	}
 }
+
+.sm-p-0 {
+	@media screen and (max-width: $breakpoint-sm) {
+		padding: 0;
+	}
+}
