@@ -44,7 +44,7 @@
 				</ul>
 			</div>
 			<div class="header__bottom">
-				<a href="#" class="header__logo">
+				<a href="/index.html" class="header__logo">
 					<img src="/img/logo contact.svg" alt="">
 				</a>
 				<div class="menu d-none d-sm-block">
@@ -164,7 +164,7 @@
 					</a>
 				</div>
 				<div class="contact__social">
-					<img src="/img/facebook pink.svg" alt="">
+					<i class="icon-facebook"></i>
 					Our page on facebook
 				</div>
 			</div>
@@ -173,15 +173,17 @@
 					We would like to help you
 				</h2>
 				<form class="form">
-					<input placeholder="Name">
+					<input placeholder="Name" class="invalid">
 					<textarea placeholder="Message"></textarea>
 					<p>
 						How to answer you?
 					</p>
-					<input placeholder="Phone number" type="tel">
+					<input placeholder="Phone number" type="tel" class="disabled" disabled>
 					<input placeholder="Email" type="email">
-					<button>
-						Send message
+					<button id="actionButton">
+						<span class="loader"></span>
+						<span class="text">Send message</span> 
+						<span class="finished-text">Sent</span> 
 					</button>
 				</form>
 			</div>

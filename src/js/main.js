@@ -69,3 +69,21 @@ const swiper = new Swiper(".swiper", {
     });
   });
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("actionButton");
+  const target = document.getElementById("actionButton");
+
+  button.addEventListener("click", () => {
+      target.classList.add("progress");
+
+      setTimeout(() => {
+          target.classList.remove("progress");
+          target.classList.add("finished");
+
+          setTimeout(() => {
+              target.classList.remove("finished");
+          }, 2000);
+      }, 2000);
+  });
+});

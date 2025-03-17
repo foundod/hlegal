@@ -1,3 +1,26 @@
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow:before {
+	content: "\e901";
+  }
+  .icon-facebook:before {
+	content: "\e900";
+  }
+  
+
 body {
 	color: var(--main-text-color);
 	font: 16px/1.63 'Montserrat', sans-serif;
@@ -48,14 +71,20 @@ body {
 	margin-bottom: 10px;
 	transition: color 0.2s ease-in-out;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
 
 	&:hover {
 		color: var(--accent-color);
+
+		& svg{
+			stroke: var(--accent-color) !important;
+		}
 	}
 
-	img {
-		width: 12px;
-		height: 12px;
+	i {
+		font-size: 20px;
+		line-height: 99%;
 	}
 }
 
@@ -110,3 +139,4 @@ body {
 		padding: 0;
 	}
 }
+
