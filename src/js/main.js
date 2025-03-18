@@ -74,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("actionButton");
   const target = document.getElementById("actionButton");
 
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault()
+  
       target.classList.add("progress");
 
       setTimeout(() => {
